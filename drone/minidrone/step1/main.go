@@ -22,7 +22,7 @@ func main() {
 
 	start := time.Now()
 	for {
-		if time.Since(start) > 10*time.Second {
+		if time.Since(start) > 5*time.Second {
 			fmt.Println("landing...")
 			drone.Land()
 			return
